@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  zoom: 100%;
 }
 
 @font-face {
@@ -83,7 +84,6 @@ nav {
 img {
   height: 200px;
   width: 200px;
-  border-radius: 100%;
   padding-bottom: 100px;
 }
 
