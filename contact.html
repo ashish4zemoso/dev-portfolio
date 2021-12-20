@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashish's Portfolio</title>
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <section class="nav-name">
+          <span> < Ashish Dahiya /> </span>
+        </section>
+        <section class="nav-navlinks">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-header">
+        <section class="contact-header-form">
+          <form action="./contact-submission.html" method="POST">
+            <section class="form-name">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </section>
+            <section class="form-email">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+            </section>
+            <section class="form-message">
+              <label for="message">Leave me a Message!</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </section>
+            <section class="form-file">
+              <label for="file">Upload a File</label>
+              <input type="file" id="file" name="attached-file" />
+            </section>
+            <section>
+              <label for="feedback"
+                >How did you like my Developer Portfolio</label
+              >
+              <span>Poor</span>
+              <input
+                type="range"
+                name="feedback"
+                id="feedback"
+                value="3"
+                min="1"
+                max="5"
+              />
+              <span>Well-Done</span>
+            </section>
+            <section>
+              <input type="submit" value="submit" />
+            </section>
+          </form>
+        </section>
+        <section class="contact-header-desc">
+          <h1>Contact Me</h1>
+          <p>
+            I am available on almost every social media. You can message me, I
+            will reply within 24 hours. I can help you with ML, AI, React,
+            Android, Cloud and Opensource Development.
+          </p>
+          <section class="contact-header-desc-links">
+            <span>Github</span><span>Linkedin</span><span>Gmail</span
+            ><span>Twitter</span><span>Facebook</span><span>Instagram</span>
+          </section>
+          <section classs="contact-header-desc-resume">
+            <a href="">See My Resume</a>
+          </section>
+        </section>
+      </section>
+      <section class="contact-address">
+        <section class="contact-address-img">
+          <figure>
+            <img src="./images/contact-mail.PNG" alt="" />
+            <figcaption>Drop Me a Line, my corner is always open!</figcaption>
+          </figure>
+        </section>
+        <section class="contact-address-details">
+          <h2>Address</h2>
+          <p>131, Sangam Apartments Sector 24 Rohini New Delhi</p>
+          <h2>Phone Number</h2>
+          <p>+91 7745239056</p>
+          <h2>Find Me on Google Maps!</h2>
+          <iframe
+            class="google-maps"
+            frameborder="0"
+            style="border: 0"
+            width="250"
+            height="250"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw"
+            allowfullscreen=""
+          >
+          </iframe>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-message">
+        <span class="footer-message-copyright"> © No Copyright </span>
+        <span class="footer-message-credits">
+          NOT REALLY Designed with ❤ By Ashish
+        </span>
+      </section>
+    </footer>
+  </body>
+</html>
