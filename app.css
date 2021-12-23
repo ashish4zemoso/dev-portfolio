@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 @font-face {
   font-family: Agustina Regular;
   font-style: normal;
@@ -17,13 +21,13 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80px;
+  height: 5rem;
 }
 
 .nav-name {
   /* display: inline-block; */
   display: inline-flex;
-  width: 500px;
+  width: 30rem;
 }
 
 .nav-name span {
@@ -31,7 +35,7 @@ nav {
   font-weight: 700;
   font-family: "Agustina Regular";
   /* padding: 0 50px; */
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .nav-navlinks {
@@ -41,8 +45,8 @@ nav {
 .nav-navlinks ul {
   list-style: none;
   display: flex;
-  width: 500px;
-  height: 50px;
+  width: 30rem;
+  height: 5.5rem;
 
   justify-content: space-around;
   align-items: center;
@@ -58,7 +62,7 @@ nav {
   color: #001c55;
   text-decoration: none;
 
-  padding: 15px;
+  padding: 1rem;
 }
 
 .nav-navlinks ul li :hover {
@@ -69,18 +73,16 @@ nav {
 
 /*main section*/
 
-main {
-  height: 370px;
-}
-
 .home-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 25rem;
 
-  background-image: url("./images/hero-bg.jpg");
+  /* background-image: url("./images/hero-bg.jpg"); */
+  background-image: url("./images/823503.webp");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -89,33 +91,33 @@ main {
   background-color: lightgray;
   padding-bottom: 0;
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
 }
 
 .home-header-desc {
   font-family: "Open Sans";
-  margin-bottom: 100px;
-  margin-left: 300px;
+  margin-bottom: 6.25rem;
+  margin-left: 19rem;
 }
 
 .home-header-desc h2 {
   color: #96ff92;
   display: flex;
   justify-content: flex-end;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .home-header h3 {
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 2rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .home-header h1 {
   color: #bdede0;
-  font-size: 64px;
+  font-size: 4rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -123,9 +125,9 @@ main {
 .home-header p {
   color: rgb(136, 159, 233);
   font-weight: bolder;
-  font-size: 30px;
-  margin-top: 100px;
-  margin-top: 0;
+  font-size: 2rem;
+  margin-top: 6.25rem;
+  margin-top: 0rem;
 }
 
 /* footer section*/
@@ -135,13 +137,13 @@ footer {
   margin: 0;
   padding: 0;
 
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .footer-message {
   font-family: "Open Sans";
   width: 100%;
-  height: 100px;
+  height: 6.125rem;
 }
 
 .footer-message-copyright {
@@ -149,7 +151,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   font-style: bold;
-  margin-top: 30px;
+  margin-top: 2rem;
 }
 
 .footer-message-credits {
@@ -158,6 +160,66 @@ footer {
   align-items: center;
 }
 .image-container {
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+/* @media only screen and (max-width: 905px) {
+  .home-header {
+    display: flex;
+    flex-direction: column;
+  }
+} */
+
+@media only screen and (max-width: 905px) {
+  .home-header-desc h2,
+  .home-header-desc h3,
+  .home-header-desc h1,
+  .home-header-desc p {
+    font-size: 2rem;
+  }
+
+  .home-header-desc {
+    margin-left: 0rem;
+  }
+
+  .ashish-pic {
+    background-color: lightgray;
+    padding-bottom: 0;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 544px) {
+  .home-header-desc h2,
+  .home-header-desc h3,
+  .home-header-desc h1,
+  .home-header-desc p {
+    font-size: 1rem;
+  }
+
+  .home-header-desc {
+    margin-left: 0rem;
+  }
+
+  .ashish-pic {
+    background-color: lightgray;
+    padding-bottom: 0;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .nav-name span {
+    font-size: 0.75rem;
+  }
+
+  .nav-navlink ul {
+    display: flex;
+    justify-content: fle;
+  }
 }
