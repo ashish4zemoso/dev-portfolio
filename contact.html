@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashish's Portfolio</title>
     <link rel="stylesheet" href="./contact.css" />
+
+    <!-- open sans bold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -15,7 +27,7 @@
         </section>
         <section class="nav-navlinks">
           <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="./about.html">About Me</a></li>
             <li><a href="./contact.html">Contact Me</a></li>
             <li><a href="./gallery.html">Gallery</a></li>
@@ -26,14 +38,84 @@
     <main>
       <section class="contact-header">
         <section class="contact-header-form">
-          <form action="./contact-submission.html" method="POST">
+          <div class="container" id="form-block">
+            <form action="/" method="GET">
+              <div class="form-elements">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" name="Name" required />
+              </div>
+              <div class="form-elements">
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" required />
+              </div>
+              <div class="form-elements">
+                <label for="feedback">Leave me a message</label>
+                <textarea
+                  id="feedback"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+              <div class="form-elements">
+                <label for="Image-Link">Attach File</label>
+                <input type="file" id="Image-Link" name="Image-Link" required />
+              </div>
+              <div class="form-elements" id="gender-box">
+                <label for="Gender">Gender</label>
+                <label for="male"
+                  ><input
+                    type="radio"
+                    id="male"
+                    name="Gender"
+                    required
+                  />male</label
+                >
+                <label for="female"
+                  ><input
+                    type="radio"
+                    id="female"
+                    name="Gender"
+                    required
+                  />female</label
+                >
+              </div>
+              <div class="form-elements">
+                <label for="skills">Requirement</label>
+                <label for="Skills"
+                  ><input type="checkbox" name="Java" id="Skills" required />
+                  Java
+                </label>
+                <label for="Skills"
+                  ><input type="checkbox" name="HTML" id="Skills" required />
+                  HTML
+                </label>
+                <label for="Skills"
+                  ><input type="checkbox" name="CSS" id="Skills" required />
+                  CSS
+                </label>
+              </div>
+              <br><br>
+              <div class="submit-btn">
+                <div>
+                  <a
+                    class="submit-main-button"
+                    href=""
+                    target="_blank"
+                    >Submit</a
+                  >
+                </div>
+            </form>
+          </div>
+          <!-- <form action="./contact-submission.html" method="POST">
             <section class="form-name">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
+              <input type="text" id="name" name="name" required />
             </section>
             <section class="form-email">
               <label for="email">Email</label>
-              <input type="text" id="email" name="email" />
+              <input type="text" id="email" name="email" required />
             </section>
             <section class="form-message">
               <label for="message">Leave me a Message!</label>
@@ -48,7 +130,7 @@
               <label for="file">Upload a File</label>
               <input type="file" id="file" name="attached-file" />
             </section>
-            <section>
+            <section class="form-feedback">
               <label for="feedback"
                 >How did you like my Developer Portfolio</label
               >
@@ -63,34 +145,54 @@
               />
               <span>Well-Done</span>
             </section>
+            <section class="form-how">
+              <label for="how">How did you come to know about me?</label>
+              <label for="how"
+                ><input type="checkbox" name="socialmedia" id="how" required />
+                Social Media
+              </label>
+              <label for="how"
+                ><input type="checkbox" name="referral" id="how" required />
+                Referreal
+              </label>
+              <label for="how"
+                ><input type="checkbox" name="self" id="how" required />
+                Self
+              </label>
+            </section>
             <section>
               <input type="submit" value="submit" />
             </section>
-          </form>
+          </form> -->
         </section>
         <section class="contact-header-desc">
           <h1>Contact Me</h1>
           <p>
             I am available on almost every social media. You can message me, I
-            will reply within 24 hours. I can help you with ML, AI, React,
-            Android, Cloud and Opensource Development.
+            will reply within 24 hours. I can help you with HTML-CSS, JS, React,
+            Java, Mongo and Fullstack Development.
           </p>
-          <section class="contact-header-desc-links">
-            <span>Github</span><span>Linkedin</span><span>Gmail</span
-            ><span>Twitter</span><span>Facebook</span><span>Instagram</span>
+          <section class="intro-desc-social-media">
+            <a href="" class="fa fa-github"></a>
+            <a href="" class="fa fa-linkedin"></a>
+            <a href="" class="fa fa-google"></a>
+            <a href="" class="fa fa-twitter"></a>
+            <a href="" class="fa fa-facebook"></a>
+            <a href="" class="fa fa-instagram"></a>
           </section>
-          <section classs="contact-header-desc-resume">
-            <a href="">See My Resume</a>
-          </section>
+          <div class="resume-btn-div">
+            <div>
+              <a
+                class="main-button"
+                href="https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf"
+                target="_blank"
+                >See My Resume</a
+              >
+            </div>
+          </div>
         </section>
       </section>
       <section class="contact-address">
-        <section class="contact-address-img">
-          <figure>
-            <img src="./images/contact-mail.PNG" alt="" />
-            <figcaption>Drop Me a Line, my corner is always open!</figcaption>
-          </figure>
-        </section>
         <section class="contact-address-details">
           <h2>Address</h2>
           <p>131, Sangam Apartments Sector 24 Rohini New Delhi</p>
@@ -102,20 +204,24 @@
             frameborder="0"
             style="border: 0"
             width="250"
-            height="250"
+            height="200"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw"
             allowfullscreen=""
           >
           </iframe>
+        </section>
+        <section class="contact-address-img">
+          <figure>
+            <img class="address-pic" src="./images/contact-mail.png" alt="" />
+            <figcaption>Drop Me a Line, my corner is always open!</figcaption>
+          </figure>
         </section>
       </section>
     </main>
     <footer>
       <section class="footer-message">
         <span class="footer-message-copyright"> © No Copyright </span>
-        <span class="footer-message-credits">
-          NOT REALLY Designed with ❤ By Ashish
-        </span>
+        <span class="footer-message-credits"> Designed with ❤ By Ashish </span>
       </section>
     </footer>
   </body>
